@@ -1,0 +1,16 @@
+/* Minimal App styles */
+.app-container {
+    width: 100%;
+    height: 100%;
+    /* Remove padding/margin that might imply a box */
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+    /* Let clicks pass through the empty area */
+}
+
+/* Re-enable pointer events for the chatbox itself, 
+   though Chatbox.css handles its own pointer-events usually */
+.app-container>* {
+    pointer-events: auto;
+}
